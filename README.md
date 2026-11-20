@@ -14,7 +14,7 @@ This repo holds docs and the registry metadata only. The servers are hosted by R
 Supplier intelligence for AI procurement and sourcing agents. Search 200,000+ manufacturers and trading companies in 6 languages, open a supplier card, or compare suppliers side by side. Results are citation-friendly, so an agent can show where each fact came from.
 
 - Endpoint: `https://source.reevol.com/mcp`
-- Auth: none for the read tools (60 requests/min per IP). An optional partner key unlocks deeper tools.
+- Auth: none for the read tools (60 requests/min per IP). An optional partner key unlocks `get_red_flags`, `draft_rfq`, `find_and_brief` and `request_introduction`.
 - Docs: https://source.reevol.com/for-agents/
 - Official MCP Registry: `com.reevol.source/supplier-search`
 
@@ -30,7 +30,7 @@ Supplier intelligence for AI procurement and sourcing agents. Search 200,000+ ma
 | `get_red_flags` | Due-diligence signals (partner key) |
 | `draft_rfq` | Draft a request for quotation (returns text, sends nothing; partner key) |
 | `find_and_brief` | One-shot research brief (partner key) |
-| `request_introduction` | Ask Reevol to introduce the buyer to a supplier |
+| `request_introduction` | Ask Reevol to introduce the buyer to a supplier (partner key) |
 | `request_supplier_listing`, `verify_supplier_listing`, `resend_supplier_listing_code` | A supplier requests or verifies its own listing |
 
 Try: "Find suppliers for HS code 8504 in China." / "Find a BSCI-certified factory in Vietnam for women's woven outerwear, 11 to 50 staff." / "Compare the first two suppliers you found."
