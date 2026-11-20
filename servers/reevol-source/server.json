@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.reevol.source/supplier-search",
+  "title": "Reevol Source: supplier search",
+  "description": "Search and compare 200,000+ global suppliers by brief, name, HS code or country. Free, no key.",
+  "version": "1.7.0",
+  "websiteUrl": "https://source.reevol.com/for-agents/",
+  "remotes": [{ "type": "streamable-http", "url": "https://source.reevol.com/mcp" }]
+}
